@@ -94,14 +94,32 @@ textarea {
 		border-style: solid;
 }
 .ba-scrolldown:before{
-		content: "\2228";
-		color: #fff;
-		display: inline-block;
-		vertical-align: middle;
+	display: inline-block;
+    content: '';
+    position: relative;
+    left: 3px;
+    top: -10px;
+    width: 10px;
+    height: 3px;
+    background: #fff;
+    transform: rotate(40deg);
+}
+.ba-scrolldown:after{
+	display: inline-block;
+    content: '';
+    position: relative;
+    right: 3px;
+    top: -10px;
+    width: 10px;
+    height: 3px;
+    background: #fff;
+    transform: rotate(-40deg);
 }
 .ba-scrolldown:hover:before{
-		content: "\2228";
-		color: #23232e;
+		background: #23232e;
+}
+.ba-scrolldown:hover:after{
+		background: #23232e;
 }
 .ba-container-center{
 	padding-left: 20px;
